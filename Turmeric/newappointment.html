@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Appointment</title>
+	<link rel="stylesheet" type="text/css" href="newappointment.css">
+	 <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--for scroll-->
+     <!--Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm fixed-top"><!--navbar used to construct navigation tag , navbar-expand-sm means that the nav bar will toggle when it is xs and sm, fixed top for fixing at top-->
+        <div class="container">
+        <!--<div  class="col-sm-3 col-12  float-right">-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" style="background-color: white; border:1px solid black"><!--data toggle is java script component-->
+                <span class="navbar-toggler-icon" style="width: 50px;color: #12498c;" ><b><u>Menu</u></b></span> 
+            </button>
+        
+            <a href="newhome.html" class="navbar-brand mr-6" data-aos="zoom-in"><!--nav bar brand used to display name of company or logo--><img src="logo.png" height="110" width="120"></a>
+        <!--</div>
+        <div class="col-sm-9">-->
+            <div class="collapse navbar-collapse " id="Navbar">
+                <ul class="navbar-nav mr-auto"><!--mrauto is used to shift the content to left from the right side-->
+                    <li class="nav-item" data-aos="zoom-in"><a href="newhome.html" class="nav-link"><span class="fa fa-home fa-md"></span>Home</a></li>
+                    <li class="nav-item" data-aos="zoom-in"><a href="newabout.html" class="nav-link"><span class="fa fa-info fa-md"></span> About</a></li>
+                    <li class="nav-item" data-aos="zoom-in"><a href="newgallery.html" class="nav-link"><span class="fa fa-picture-o fa-md"></span> Gallery</a></li>
+                    <li class="nav-item" data-aos="zoom-in"><a href="newcontact.html" class="nav-link"><span class="fa fa-address-card fa-md"></span> Contact</a></li>
+                </ul> 
+            </div> 
+        <!--</div> -->         
+        </div>
+    </nav>
+   <section>
+	    <div class="container-fluid" style="padding-top: 150px">
+	    	<div class="row">
+	    		<div class="col-12 col-sm-6">
+	    			
+	    		</div>
+	    		<div class="col-12 col-sm-5 offset-sm-1">
+	    			<div class="heading">
+	    				<h1>Make An Appointment</h1>
+	    			</div>
+	    			<hr>
+					<center><h5>You are more than welcome to connect with us by submitting the form below.</h5></center>
+	                <form>
+	                    <div class="form-group row">
+	                        <label for="firstname" class="col-md-3 col-form-label font-weight-bold">First Name</label>
+	                        <div class="col-md-8">
+	                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+	                        </div>
+	                    </div>
+	                    <div class="form-group row">
+	                        <label for="lastname" class="col-md-3 col-form-label font-weight-bold">Last Name</label>
+	                        <div class="col-md-8">
+	                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+	                        </div>
+	                    </div>
+	                    <div class="form-group row">
+	                        <label for="telnum" class="col-12 col-md-3 col-form-label font-weight-bold">Contact Tel.</label>
+	                        <div class="col-4 col-md-3">
+	                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
+	                        </div>
+	                            <div class="col-7 col-md-5">
+	                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
+	                        </div>
+	                    </div>
+	                    <div class="form-group row">
+	                        <label for="emailid" class="col-md-3 col-form-label font-weight-bold">Email</label>
+	                        <div class="col-md-8">
+	                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+	                        </div>
+	                    </div>
+	                    <div class="form-group row">
+	                    	<label for="emailid" class="col-md-3 col-form-label font-weight-bold">Select Slot Time</label>
+	                        <div class="col-md-8">
+	                            <select name="cars" id="cars" class="custom-select">
+									<option value="Select Slot Timing">Select Slot Timing</option>
+					  				<option value="10:00am to 12:00pm">10:00am to 12:00pm</option>
+					  				<option value="10:00am to 12:00pm">10:00am to 12:00pm</option>
+					 				<option value="10:00am to 12:00pm">10:00am to 12:00pm</option>
+					  				<option value="10:00am to 12:00pm">10:00am to 12:00pm</option>
+								</select>
+	                        </div>
+	                    </div>
+	                    <div class="form-group row">
+	                        <label for="feedback" class="col-md-3 col-form-label font-weight-bold"></label>
+	                        <div class="col-md-8">
+	                            <textarea type="textarea" class="form-control" id="feedback" name="feedback"
+	                            rows="4" placeholder="Enter Purpose Of Booking"></textarea>
+	                        </div>
+	                    </div>
+	                    <div class="form-group row">
+	                        <div class="offset-md-3 col-md-9">
+	                            <button type="submit" class="btn btn-primary">Book</button>
+	                        </div>
+	                    </div>
+	                </form>   
+	            </div>
+	    	</div>
+	    </div>
+	</section>
+
+
+    <footer class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-4 footer1" data-aos="zoom-in">
+					<h2><i class="fa fa-map-marker" aria-hidden="true" style="color: #12498c;"></i> How To Reach Us</h2><br>
+					<div class="map-responsive">
+						<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1860.7377219159864!2d79.05523421148267!3d21.133469289439102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0647e85b811%3A0x4d5a45497f34ddf1!2sWockhardt%20Heart%20Hospital!5e0!3m2!1sen!2sin!4v1596169147622!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						</p>
+					</div><br>
+					<center><h4>Follow Us On</h4></center><br>
+					<a href="https://www.facebook.com/" class="fa fa-lg fa-facebook" target="_blank" style="color: #12498c;"></a>
+	                <a href="https://twitter.com/LOGIN" class="fa fa-lg fa-twitter" target="_blank" style="color: #12498c;"></a>
+	                <a href="https://www.youtube.com/" class="fa fa-lg fa-youtube" target="_blank" style="color: #12498c;"></a>
+	                <a href="https://www.instagram.com/" class="fa fa-lg fa-instagram" target="_blank" style="color: #12498c;"></a>
+				</div>
+				<div class="col-12 col-sm-4 footer2" data-aos="zoom-in">
+					<h4 id="addressfooter"><i class="fa fa-address-card" aria-hidden="true" style="color: #12498c;"></i> Address:</h4>
+					<h5> 1643 North Ambazari Road Daga College, beside Lady Amritbai, Shankar Nagar, Nagpur,<br> Maharashtra 440033</h5>
+					<h4><i class="fa fa-phone" aria-hidden="true" style="color: #12498c;"></i> Contact:</h4>
+					<h5>+91 8654793460, <br>0712 225533</h5>
+					<a href="newcontact.html"><button>CONTACT US</button></a><br>
+					<br><h4><i class="fa fa-envelope" aria-hidden="true" style="color: #12498c;"></i> E-mail</h4>
+					<h5>turmerichealth10@gmail.com</h5>
+					
+				</div>
+				<div class="col-12 col-sm-4 footer3" data-aos="zoom-in">
+					<center><h2><i class="fa fa-comments" aria-hidden="true" style="color: #12498c;"></i> Feedback</h2></center>
+					<form>
+	           		 	<div class="form-group row">
+                        	<div class="col-sm-10 offset-sm-1">
+                           		<input type="text" class="form-control" name="yourname" placeholder="Your Name">
+                        	</div>
+                    	</div>
+                    	<div class="form-group row">
+                        	<div class="col-sm-10 offset-sm-1">
+                           		<input type="text" class="form-control" name="youremail" placeholder="Your Email">
+                        	</div>
+                    	</div>
+                    	<div class="form-group row">
+	                    	<div class="col-sm-10 offset-sm-1">
+	                            <textarea type="textarea" class="form-control" name="discription"
+	                            rows="5" placeholder="Discription"></textarea>
+	                        </div>
+                    	</div>
+                    	<div class="form-group row">
+                        	<div class="col-sm-10 offset-sm-1">
+                           		<input type="text" class="form-control" name="yourmobileno" placeholder="Your Mobile No.">
+                        	</div>
+                    	</div>
+                    	<div class="form-group row">
+	                        <div class="col-sm-10 offset-sm-1">
+	                            <button type="submit" class="btn btn-primary">Submit</button>
+	                        </div>
+                    	</div>
+            		</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<a href="#top" class="gotopbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+
+	<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  		AOS.init();
+	</script>
+</body>
+</html>
