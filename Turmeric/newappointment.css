@@ -146,3 +146,22 @@ section{
 	background-color: #12498c;
 	color: white;
 }
+
+html{
+
+	scroll-behavior: smooth;
+}
+.gotopbtn{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: white;
+	border-radius: 100px;
+	border:1px solid #12498c;
+	bottom: 20px;
+	right: 25px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 25px;
+}
