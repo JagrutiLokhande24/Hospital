@@ -1,0 +1,184 @@
+*{
+	font-family: 'Rubik', sans-serif;
+}
+nav{
+	background-color: white;
+    /*background-color:rgba(0,102,102,0.8);*/
+    /*background-color: rgba(153, 214, 255,0.8);*/
+    /*background-image: linear-gradient(to right, #12498c,  #1aa3ff);*/
+ }
+.navbar-brand img{
+    box-shadow: 1px 1px 5px 2px #d9d8d4;
+    border-radius: 10px;
+ }
+
+#Navbar a{
+    color:#12498c;
+    text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 15px;
+	position: relative;
+	font-family: 'Libre Baskerville', serif;
+	margin-left: 20px;
+
+}
+#Navbar a:before{
+	content: "";
+	position: absolute;
+	top:80%;
+	left:0;
+	width: 0;
+	height: 2px;
+	border-bottom: 2px solid #D03737;
+	transition: all 0.4s linear;
+}
+
+#Navbar a:hover:before{
+	width: 100%;
+}
+section{
+	background-image: url('tool5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 40%;
+}
+.heading h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	animation: aagepiche 2s linear infinite;
+	animation-direction: alternate;
+	font-family: 'Libre Baskerville', serif;
+	color: white;
+	text-shadow: 2px 2px #12498c;
+}
+@keyframes aagepiche{
+	from{ padding-left: 50px; }
+	to{ padding-right: 60px; }
+}
+.form-group input, .form-group textarea, .form-group select{
+	border:1px solid #12498c;
+}
+.form-group button{
+	background-color: #12498c;
+}
+
+
+.footer1, .footer2, .footer3{
+	background-color: #12498c;
+	font-family: 'Rubik', sans-serif;
+	color: white;
+	padding-bottom: 20px;
+}
+.footer1 h2{
+	margin-bottom: 10px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Libre Baskerville', serif;
+}
+.footer1 h4{
+	font-family: 'Libre Baskerville', serif;
+}
+.footer2, .footer1{
+	/*border:1px solid black;*/
+	font-size: 17px;
+	text-align: center;
+}
+.footer2 h4{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 23px;
+}
+.footer2 h5{
+	font-size: 17px;
+}
+.footer2 button{
+	padding:5px 20px;
+	border-radius: 5px;
+	border:1px solid white;
+	background-color: #AFEEEE;
+	color: black;
+	font-size: 17px;
+}
+.footer2 button:hover{
+	background-color: white;
+	color: black;
+}
+.footer2 span a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+.footer2 span a:hover{
+	color: #D03737;
+}
+.fa {
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  color: white;
+}
+.fa:hover{
+	color: #AFEEEE;
+}
+
+#addressfooter{
+	margin-top: 20px;
+}
+.footer3 h2{
+	font-family: 'Libre Baskerville', serif;
+	padding-top: 20px;
+	font-size: 25px;
+	margin-top: 10px;
+}
+.footer3 input{
+	background-color:white;
+	border:1px solid black;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.footer3 textarea{
+	background-color:white;
+	border:1px solid black;
+	color: white;
+	font-size: 15px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.footer3 button{
+	padding: 5px 15px;
+	background-color:#12498c ;
+	color:white ;
+	border:1px solid white
+	border-radius: 10px;
+	cursor: pointer;
+}
+.footer3 button:hover{
+	background-color: white;
+	color: #12498c;
+}
+html{
+
+	scroll-behavior: smooth;
+}
+.gotopbtn{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background:#12498c;
+	border-radius: 100px;
+	border:1px solid white;
+	bottom: 20px;
+	right: 25px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 25px;
+}
