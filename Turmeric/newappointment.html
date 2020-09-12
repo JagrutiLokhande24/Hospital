@@ -22,7 +22,7 @@
 <body>
 	<a name="top"></a>
 
-	<nav class="navbar navbar-expand-sm fixed-top"><!--navbar used to construct navigation tag , navbar-expand-sm means that the nav bar will toggle when it is xs and sm, fixed top for fixing at top-->
+	<nav class="navbar navbar-expand-sm fixed-top header"><!--navbar used to construct navigation tag , navbar-expand-sm means that the nav bar will toggle when it is xs and sm, fixed top for fixing at top-->
         <div class="container-fluid" style="border-bottom: 3px solid #12498c; margin-bottom: 0px;">
 
         <!--<div  class="col-sm-3 col-12  float-right">-->
@@ -196,6 +196,16 @@
 	  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script><!--for number effect-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script><!--for number effect-->
+	<script>
+		$(window).on("scroll", function() {
+		    if($(window).scrollTop() > 100) {
+		        $(".header").addClass("active");
+		    } else {
+		        //remove the background property so it comes transparent again (defined in your css)
+		       $(".header").removeClass("active");
+		    }
+		});
+	</script>
 	<script>
   		AOS.init();
 	</script>
