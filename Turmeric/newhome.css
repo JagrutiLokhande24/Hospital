@@ -2,10 +2,13 @@
 	font-family: 'Rubik', sans-serif;
 }
 nav{
-	background-color: white;
+	/*background-color: white;*/
     /*background-color:rgba(0,102,102,0.8);*/
-    /*background-color: rgba(153, 214, 255,0.8);*/
+    background-color: rgba(153, 214, 255,0.8);
     /*background-image: linear-gradient(to right, #12498c,  #1aa3ff);*/
+ }
+ .active { 
+ 	background-color: #fff;
  }
 .navbar-brand img{
     box-shadow: 1px 1px 5px 2px #d9d8d4;
