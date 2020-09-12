@@ -189,7 +189,8 @@ nav{
 .cube{
 	padding-top: 100px;
 	padding-bottom: 10px;
-	background-color: #B0E0E6;
+	/*background-color: #B0E0E6;*/
+	background-image: linear-gradient(to top, #12498c, #AFEEEE);
 }
 
 		.wrapper{
